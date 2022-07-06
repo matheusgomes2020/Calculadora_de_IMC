@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void validarCampos( View view ){
+    public void validarCampos(View view) {
 
         String altura = binding.editTextAltura.getText().toString();
         String peso = binding.editTextPeso.getText().toString();
