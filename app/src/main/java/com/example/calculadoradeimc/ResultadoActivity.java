@@ -33,7 +33,7 @@ public class ResultadoActivity extends AppCompatActivity {
             Double imc = Double.valueOf(peso) / ( Double.valueOf( altura ) * Double.valueOf( altura ) );
             String imc2 = String.format( "%.2f", imc );
 
-            binding.textRImc.setText( imc2 );
+            binding.textRImc.setText(imc2);
 
             String resultado = "";
 
