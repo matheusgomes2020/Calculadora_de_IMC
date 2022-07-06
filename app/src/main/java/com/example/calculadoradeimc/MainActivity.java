@@ -30,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
         String peso = binding.editTextPeso.getText().toString();
 
 
-        if ( !altura.isEmpty() ){
-            if ( !peso.isEmpty() ){
+        if (!altura.isEmpty()) {
+            if (!peso.isEmpty()) {
 
 
-                Intent i = new Intent( getApplicationContext(), ResultadoActivity.class );
-                i.putExtra( "peso", peso );
-                i.putExtra( "altura", altura );
-                startActivity( i );
+                Intent i = new Intent(getApplicationContext(), ResultadoActivity.class);
+                i.putExtra("peso", peso);
+                i.putExtra("altura", altura);
+                startActivity(i);
 
             } else {
                 Toast.makeText(this, "Digite o sua peso!", Toast.LENGTH_SHORT).show();

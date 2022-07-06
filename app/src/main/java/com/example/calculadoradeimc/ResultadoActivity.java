@@ -17,18 +17,18 @@ public class ResultadoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityResultadoBinding.inflate( getLayoutInflater() );
-        setContentView( binding.getRoot() );
+        binding = ActivityResultadoBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Bundle bundle = getIntent().getExtras();
 
-        if ( bundle != null ){
+        if (bundle != null) {
 
-            String peso = String.valueOf(bundle.get( "peso" ));
-            String altura = String.valueOf(bundle.get( "altura" ));
+            String peso = String.valueOf(bundle.get("peso"));
+            String altura = String.valueOf(bundle.get("altura"));
 
-            binding.textRPeso.setText( "Peso Informado:" + peso + " kg"  );
-            binding.textRAltura.setText( "Altura Informada:" + altura + " m" );
+            binding.textRPeso.setText("Peso Informado:" + peso + " kg");
+            binding.textRAltura.setText("Altura Informada:" + altura + " m");
 
             Double imc = Double.valueOf(peso) / ( Double.valueOf( altura ) * Double.valueOf( altura ) );
             String imc2 = String.format( "%.2f", imc );
